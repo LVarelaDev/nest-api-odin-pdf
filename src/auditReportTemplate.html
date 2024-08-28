@@ -1,0 +1,293 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Plantilla PDF Tamaño Carta</title>
+    <style>
+      @page {
+        size: letter;
+        margin: 0;
+      }
+      body {
+        width: 215.9mm;
+        height: 279.4mm;
+        margin: 0;
+        padding: 5mm;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+      }
+      .container {
+        width: 100%;
+        height: 100%;
+        /* border: 1px solid #000; */
+      }
+      h1 {
+        text-align: center;
+        color: #333;
+      }
+      p {
+        line-height: 1.5;
+        color: #666;
+      }
+      .title {
+        text-align: center;
+        background: #0070c0;
+        width: 100%;
+        color: white;
+      }
+      .subTitle {
+        text-align: start;
+        background: #0070c0;
+        width: 100%;
+        color: white;
+      }
+
+      .pSubTitle {
+        font-weight: bold;
+        color: white;
+        margin-left: 5px;
+      }
+      .containerContact {
+        display: flex;
+        flex-direction: column;
+        gap: 5mm;
+        padding: 0px 5px 20px 5px;
+        border-bottom: 2px solid black;
+      }
+      .advisorAndDate {
+        display: flex;
+        justify-content: space-between;
+      }
+      .advisor {
+        display: flex;
+        gap: 10px;
+      }
+      .tableContainer {
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+      }
+      .tableTitleContainer {
+        background: #bfbfbf;
+        text-align: center;
+      }
+      .pTableTitle {
+        font-weight: bold;
+        color: black;
+        margin-left: 5px;
+        margin: 5px;
+      }
+      .containerRows {
+        display: flex;
+      }
+      .rowsText {
+        font-size: 14px;
+        margin: 10px;
+        margin-left: 5px;
+        color: black;
+      }
+      .rowsText2 {
+        font-size: 14px;
+        margin: 3px;
+        margin-left: 5px;
+        color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="title">
+        <p style="font-weight: bold; color: white">CONTACTO DE AUDITORÍA</p>
+      </div>
+      <div class="containerContact">
+        <div class="advisorAndDate">
+          <div class="advisor">
+            <span style="font-weight: bold">ASESOR:</span>
+            <span>RIVERA VELASQUEZ JOSE HEIDER</span>
+          </div>
+          <div style="display: flex; gap: 10px">
+            <span style="font-weight: bold">FECHA DE CONTACTO:</span>
+            <span>07/06/2021</span>
+          </div>
+        </div>
+        <div style="display: flex; gap: 10mm">
+          <span style="font-weight: bold">JEFE:</span>
+          <span>HERNANDEZ MONTOYA RAMON ALEXANDER</span>
+        </div>
+      </div>
+
+      <div class="subTitle">
+        <p class="pSubTitle">AREA DE ENFOQUE</p>
+      </div>
+
+      <div class="tableContainer">
+        <div class="tableTitleContainer">
+          <p class="pTableTitle">OBJETIVOS</p>
+        </div>
+        <div class="containerRows">
+          <div
+            style="
+              width: 60%;
+              border: 1px solid black;
+              display: flex;
+              align-items: center;
+            "
+          >
+            <p class="rowsText">
+              Area(s) de enfoque específico del contacto de auditoria si es que
+              lo hay
+            </p>
+          </div>
+          <div
+            style="
+              width: 40%;
+              border: 1px solid black;
+              display: flex;
+              align-items: center;
+            "
+          >
+            <p class="rowsText2">
+              Garantizar la visita constante al 100% de los clientes
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="subTitle">
+        <p class="pSubTitle">LISTA DE CHEQUEO</p>
+      </div>
+
+      <div class="tableContainer">
+        <div class="tableTitleContainer">
+          <p class="pTableTitle">RUTA</p>
+        </div>
+        <div class="containerRows">
+          <div
+            style="
+              width: 60%;
+              border: 1px solid black;
+              display: flex;
+              align-items: center;
+            "
+          >
+            <p class="rowsText">DIA DE LA RUTA A AUDITAR</p>
+          </div>
+          <div
+            style="
+              width: 40%;
+              border: 1px solid black;
+              display: flex;
+              align-items: center;
+            "
+          >
+            <p class="rowsText2">23</p>
+          </div>
+        </div>
+        <div class="containerRows">
+          <div
+            style="
+              width: 60%;
+              border: 1px solid black;
+              display: flex;
+              align-items: center;
+            "
+          >
+            <p class="rowsText">CANTIDAD DE CLIENTES DE LA RUTA VISITADOS</p>
+          </div>
+          <div
+            style="
+              width: 40%;
+              border: 1px solid black;
+              display: flex;
+              align-items: center;
+            "
+          >
+            <p class="rowsText2">3</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="tableContainer">
+        <div class="tableTitleContainer">
+          <p class="pTableTitle">LISTA DE CHEQUEO</p>
+        </div>
+        <div class="containerRows">
+          <div
+            style="
+              width: 60%;
+              border: 1px solid black;
+              display: flex;
+              align-items: center;
+            "
+          >
+            <p class="rowsText">
+              El cliente existe y esta registrado y secuenciado en el rutero del
+              sistema y los datos de contacto son correctos y están
+              actualizados.
+            </p>
+          </div>
+          <div
+            style="
+              width: 40%;
+              border: 1px solid black;
+              display: flex;
+              align-items: center;
+            "
+          >
+            <p class="rowsText2">100 %</p>
+          </div>
+        </div>
+        <div class="containerRows">
+          <div
+            style="
+              width: 60%;
+              border: 1px solid black;
+              display: flex;
+              align-items: center;
+            "
+          >
+            <p class="rowsText">
+              El cliente fue visitado por el asesor el día y la hora estipulados
+              y hay evidencia de las visitas
+            </p>
+          </div>
+          <div
+            style="
+              width: 40%;
+              border: 1px solid black;
+              display: flex;
+              align-items: center;
+            "
+          >
+            <p class="rowsText2">100 %</p>
+          </div>
+        </div>
+        <div class="containerRows">
+          <div
+            style="
+              width: 60%;
+              border: 1px solid black;
+              display: flex;
+              align-items: center;
+            "
+          >
+            <p class="rowsText">
+              El asesor se contactó con el encargado dentro del cliente
+            </p>
+          </div>
+          <div
+            style="
+              width: 40%;
+              border: 1px solid black;
+              display: flex;
+              align-items: center;
+            "
+          >
+            <p class="rowsText2">100 %</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
